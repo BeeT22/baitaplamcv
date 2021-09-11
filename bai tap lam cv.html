@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kodchasan&display=swap" rel="stylesheet">
+    <title>Sâu's Blog - Chuyện nhà Sâu</title>
+</head>
+<!-- CSS style cho header -->
+<style>
+    .header {
+        background-color: cornflowerblue;
+        color: rgb(253, 253, 253);
+        padding: 20px;
+        text-align: left;    
+        font-size: 28px   
+    }
+</style>
+<!-- CSS cho body -->
+<style>
+    .body {
+        margin: 0 auto;
+        padding: 0;
+        width: 1280px;
+    }
+    .wrap {
+        width: 1280px;
+        float: center;
+    }
+</style>
+<!-- CSS phân tách header và content -->
+<style>
+    .phancachheadervacontent {
+        width: 1280;
+        height: auto;
+        background-color:#D9D9D9;
+        margin: 0 auto;
+    }
+</style>
+<!-- CSS ảnh Sâu -->
+<style>
+    .imgSau {
+
+    }
+</style>
+<!-- CSS style cho nav -->
+<style>
+    /* màu nền của div các chỉ mục trong menu */
+    ul {
+        list-style-type: none;
+        margin: 0;
+        padding: auto;
+        overflow:hidden;
+        background-color: #F2B705;
+        text-decoration: none;
+}
+    /* màu nền của div các chỉ mục trong menu */
+    .ulinfo {
+        list-style-type: none;
+        margin: 0;
+        padding: auto;
+        overflow:hidden;
+        background-color: #D9D9D9;
+        text-decoration: none;
+    }
+    .topnav {
+        padding: auto;
+        height: auto;
+    }
+/* Căn lề chữ */
+    li{
+        float: right;
+    }
+   /* Màu chữ,khoảng cách giữa các chỉ mục */
+    li a, .dropbtn {
+        display: inline-block;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+   /* rê chuột vào thì ô thuộc thẻ li hiện màu đỏ */
+    li a:hover, .dropdown:hover .dropbtn {
+        background-color: crimson;
+        min-width: none;
+    }
+    /* dropdown trong thẻ li được ở trong khung */
+    li.dropdown {
+        display: inline-block;
+    }
+    /* Nội dung trong dropdown */
+    .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #F2B705;
+        min-width: none;
+        box-shadow: none;
+        z-index: 1;
+    }
+    /* Chữ trong dropdown */
+    .dropdown-content a {
+        color: rgb(255, 255, 255);
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+    /* màu dropdownbtn */
+    .dropdown-content a:hover {background-color: blanchedalmond;}
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    /* Tạo row, column phần thông tin cá nhân */
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 15px;
+    }
+    .rowinfo:after {
+        content:"infosau";
+        display:table;
+        clear: both;
+    }
+    @media screen and (max-width: 1280px) {
+        .column {
+        width: 100%;
+        }
+    }   
+    
+</style>
+<body class="body" style="font-family: 'Kodchasan', sans-serif;">
+<!-- Navbar -->
+<article class="wrap">
+    <article>
+        <header class= "header" style="padding: auto;">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Kodchasan:wght@700&display=swap" rel="stylesheet">
+            <p> <h1>Sâu's Blog</h1> </p>
+        </header>
+    </article>
+        
+    <article class="topnav" style="padding: auto;background-color:#F2B705;">
+        <ul>
+            <li><a href="#contact">Liên Hệ</a> </li>
+            <li class="dropdown">
+                <a class="dropbtn" href="#vlog">Học cách bắt bóng cùng Sâu</a>
+                <div class="dropdown-content">
+                    <a href="#"> Gặm xương đúng cách</a>
+                    <a href="#"> Đi WC đúng chỗ</a>
+                    <a href="#"> Chơi bóng cùng Sâu</a>
+                </div>
+            </li>
+                        <li><a href="#about">Về tôi</a> </li>
+            <li><a href="#home">Trang chủ</a> </li>
+        </ul>
+    </article>
+<!-- Dải phân cách navbar và content -->
+    <article class="phancachheadervacontent">
+        <article>
+            <p style="text-align: center;color: rgb(7, 0, 0); margin: 0 auto; ">
+                Đây là phân cách giữa header và content
+            </p>
+        </article>
+        
+        
+    </article>
+<!-- Thông tin cá nhân -->
+    <article class="rowinfo">
+        <!-- ảnh sâu -->
+        <div class="column">
+            <div class="imgSau" style="align:left;">
+                <img src="FXNF6069.JPG" alt="Ảnh Sâu" width="300px">
+            </div>
+        </div>
+
+        <!-- họ tên và nội dung -->
+        <div class="column">
+            <article class="họ tên và nội dung" style="align:left">
+                <article class="họ tên">
+                    <p> <h2>CAO SÂU</h2> </p>
+                    <p>Sinh ngày: 01/02/2019</p>
+                    <ul class="ulinfo" style="padding: auto; margin:0 auto;"><p><strong>Sở thích</strong></p></ul>
+                    <p>Gặm xương, trêu chó, bơi, bắt bóng</p>
+                    <ul class="ulinfo"><p><strong>Kỹ năng đặc biệt</strong></p></ul>
+                    <p>Bắt chuột</p>
+                </article>
+        </div>
+
+        
+
+        </article>
+            
+
+    
+    
+
+
+</body>
+</html>
